@@ -1,0 +1,118 @@
+.library {
+  position: fixed;
+  -webkit-box-shadow: 2px 2px 50px #dddddd;
+          box-shadow: 2px 2px 50px #dddddd;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  overflow: scroll;
+  background: white;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.library h2 {
+  padding: 2rem;
+}
+
+.library-song {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.library-song img {
+  width: 30%;
+}
+
+.library-song h3 {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.library-song h4 {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.library-song:hover {
+  background: #ebebeb;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.selected {
+  background: #c2d0fd;
+}
+
+.active-library {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+  .library-song {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.2rem;
+  }
+  .library-song h4 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=Library.css.map */
