@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/focustracks-/static/css/main.818a4a54.css",
+    "main.js": "/focustracks-/static/js/main.bef8545c.js",
+    "index.html": "/focustracks-/index.html",
+    "main.818a4a54.css.map": "/focustracks-/static/css/main.818a4a54.css.map",
+    "main.bef8545c.js.map": "/focustracks-/static/js/main.bef8545c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.818a4a54.css",
+    "static/js/main.bef8545c.js"
+  ]
+}
